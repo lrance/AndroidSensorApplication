@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+ 
+    <TextView
+        android:id="@+id/xval"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/yval"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xval"
+        android:textSize="20dp" />
+    
+
+    <TextView
+        android:id="@+id/zval"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yval"
+        android:textSize="20dp"
+         />
+    <TextView
+        android:id="@+id/accuracy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zval"
+        android:textColor="#0000ff"
+        android:textSize="10dp"
+         />
+    
+    <!--  <TextView
+        android:id="@+id/upload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zval"
+        android:textSize="20dp"
+        /> -->
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stop"
+        android:layout_alignBottom="@+id/stop"
+        android:layout_alignLeft="@+id/zval"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zval"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/start"
+        android:text="Stop" 
+        />
+    
+    <Button
+        android:id="@+id/btnTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zval"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/stop"
+        android:visibility="gone"
+        android:text="WarnTxt" />
+
+   
+        <!--
+         android:layout_alignRight="@+id/zval" 
+        android:layout_alignBaseline="@+id/stop"
+        android:layout_alignBottom="@+id/stop" -->
+       
+
+    <LinearLayout
+        android:id="@+id/chart_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/start"
+        android:layout_centerHorizontal="true"
+        android:baselineAligned="true"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+
+  
+
+</RelativeLayout>
